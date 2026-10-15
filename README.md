@@ -45,7 +45,3 @@ task-tracker/
 - [ ] Tapşırığı redaktə etmək
 - [ ] Son tarix (deadline) əlavə etmək
 - [ ] Sürüşdürərək sıralamaq (drag and drop)
-
-## Lisenziya
-
-MIT

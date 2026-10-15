@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Task Tracker</h1>
+      <p class="subtitle">Gündəlik tapşırıqlarını sadə və səliqəli idarə et</p>
+    </header>
+
+    <form id="task-form" autocomplete="off">
+      <input id="task-input" type="text" placeholder="Yeni tapşırıq yaz..." maxlength="120" required>
+      <button type="submit">Əlavə et</button>
+    </form>
+
+    <div class="toolbar">
+      <div class="filters" role="group" aria-label="Filtr">
+        <button class="filter active" data-filter="all">Hamısı</button>
+        <button class="filter" data-filter="active">Gözləyən</button>
+        <button class="filter" data-filter="done">Tamamlanan</button>
+      </div>
+      <span id="counter" class="counter"></span>
+    </div>
+
+    <ul id="task-list" class="task-list"></ul>
+    <p id="empty" class="empty" hidden>Hələ tapşırıq yoxdur. İlk tapşırığını əlavə et!</p>
+
+    <footer>
+      <button id="clear-done" class="link-btn">Tamamlananları təmizlə</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
